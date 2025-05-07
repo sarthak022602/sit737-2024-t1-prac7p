@@ -59,12 +59,7 @@ docker build -t sit737-node-app .
 ### 🌐 4. Accessing the App
 
 * I ran `kubectl get svc` to get the NodePort for the Node.js app.
-* Accessed the app in the browser at:
-
-
-http://localhost:3000
-
-
+  
 * I saw: `Welcome to SIT737 Task 9.1P Microservice!`
 
 ---
@@ -72,12 +67,6 @@ http://localhost:3000
 ###  5. Verifying MongoDB Integration
 
 * I used `curl` to test the `/data` POST and GET endpoints:
-
-
-curl -X POST http://localhost:<NodePort>/data -H "Content-Type: application/json" -d '{"name":"Sarthak","task":"9.1P"}'
-
-http://localhost:32719/
-
 
 * The inserted document was successfully returned, confirming MongoDB connection.
 
