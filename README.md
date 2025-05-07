@@ -62,7 +62,7 @@ docker build -t sit737-node-app .
 * Accessed the app in the browser at:
 
 
-http://localhost:<NodePort>
+http://localhost:3000
 
 
 * I saw: `Welcome to SIT737 Task 9.1P Microservice!`
@@ -76,7 +76,7 @@ http://localhost:<NodePort>
 
 curl -X POST http://localhost:<NodePort>/data -H "Content-Type: application/json" -d '{"name":"Sarthak","task":"9.1P"}'
 
-curl http://localhost:<NodePort>/data
+http://localhost:32719/
 
 
 * The inserted document was successfully returned, confirming MongoDB connection.
